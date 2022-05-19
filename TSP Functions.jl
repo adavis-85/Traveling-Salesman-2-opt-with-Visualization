@@ -83,7 +83,6 @@ function two_opt(path)
     best_distance = path_cost_from_distance_matrix(Distances,path)
     existing_route=path
 
-   for k in 1:10000
         for i in 1:length(path)-2
             
             for j in i+1:length(path)-1
@@ -99,7 +98,6 @@ function two_opt(path)
                 end
             end
         end
-    end
         return best_distance,existing_route
 end
 
